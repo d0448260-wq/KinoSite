@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница фильма</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__left">
+                <a href="index.html" class="logo">
+                    <img src="icons/video-player.svg" alt="Logo" class="logo-img logo-blue">
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Фильмы</a></li>
+                    <li><a href="top25.html" class="nav__link">Топ-25</a></li>
+                    <li><a href="actors.html" class="nav__link">Актёры</a></li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <button class="btn-primary">Подписаться</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container movie-page">
+        <h1 class="movie-page__title" id="movie-title">Загрузка...</h1>
+    
+        <div class="movie-page__grid">
+            <div class="movie-page__poster">
+                <img src="" alt="Постер фильма" id="movie-img">
+            </div>
+    
+            <div class="movie-page__info">
+                <p class="movie-page__description" id="movie-desc">Ожидание описания...</p>
+                <p class="movie-page__genre" id="movie-genre"></p>
+    
+                <div class="movie-page__stats">
+                    <div class="stat-item"><span>Год выпуска</span><b id="movie-year"></b></div>
+                    <div class="stat-item"><span>Возраст</span><b id="movie-age"></b></div>
+                    <div class="stat-item"><span>Рейтинг</span><b id="movie-rating"></b></div>
+                    <div class="stat-item"><span>Длительность</span><b id="movie-runtime"></b></div>
+                </div>
+    
+                <div class="movie-page__stars" id="movie-stars">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+    
+                <div class="movie-page__cast">
+                    <h3>Актерский состав</h3>
+                    <ul id="movie-cast">
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="movie-page">
+        <div class="container">
+            </div>
+    </section>
+
+    <section class="related-movies">
+        <div class="container">
+            <h2 class="related-movies__title">Фильмы с таким же годом выпуска</h2>
+            <div class="movies-grid" id="related-container">
+                </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="icons/video-player.svg" alt="Logo" class="footer-logo logo-blue">
+                    <a href="https://vk.com" class="social-link">
+                        <img src="icons/vk.svg" alt="VK" class="vk-icon">
+                    </a>
+                </div>
+                <div class="footer__nav">
+                    <ul class="footer__list">
+                        <li><a href="index.html">Фильмы</a></li>
+                        <li><a href="top25.html">Топ-25</a></li>
+                        <li><a href="actors.html">Актёры</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <p>Kino@kino.ru</p>
+                    <p>8-888-888-88-88</p>
+                </div>
+            </div>
+            <hr class="footer__line">
+            <div class="footer__bottom">
+                <p class="policy">Политика конфиденциальности</p>
+                <p class="copyright">Киносайт © 2026</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/movie-detail.js"></script>
+</body>
+</html>

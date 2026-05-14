@@ -1,0 +1,21 @@
+.top-header { display: flex; justify-content: space-between; align-items: center; margin: 30px 0; }
+.filter-input { padding: 10px; border-radius: 20px; border: 1px solid #ccc; width: 150px; }
+
+.top-card { 
+    display: flex; 
+    gap: 20px; 
+    padding: 20px 0; 
+    border-bottom: 1px solid #eee; 
+    align-items: center; 
+}
+
+
+.rank-number { font-size: 60px; font-weight: bold; min-width: 80px; }
+.rank-blue { color: #26C3D1; } 
+.rank-black { color: #000; }  
+
+.top-poster { width: 120px; height: 180px; object-fit: cover; border-radius: 8px; }
+.top-info { flex: 1; }
+.top-stats { width: 200px; text-align: right; font-size: 14px; }
+
+.pagination { display: flex; justify-content: center; gap: 10px; margin: 40px 0; }

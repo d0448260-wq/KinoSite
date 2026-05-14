@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Топ-25 фильмов - КиноСайт</title>
+    <link rel="stylesheet" href="css/top25.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__left">
+                <a href="index.html" class="logo">
+                    <img src="icons/video-player.svg" alt="Logo" class="logo-img logo-blue">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Фильмы</a></li>
+                    <li><a href="top25.html" class="nav__link">Топ-25</a></li>
+                    <li><a href="actors.html" class="nav__link">Актёры</a></li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <button class="btn-primary">Подписаться</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="top-header">
+            <h1 class="top-title">Топ-25 фильмов</h1>
+            <div class="search-filters">
+                <input type="number" id="search-year" placeholder="Год" class="filter-input">
+                <input type="text" id="search-name" placeholder="Название" class="filter-input">
+            </div>
+        </div>
+
+        <div id="top-movies-list" class="top-list">
+            </div>
+
+        <div class="pagination" id="pagination">
+            <button class="page-btn active" onclick="changePage(1)">1</button>
+            <button class="page-btn" onclick="changePage(2)">2</button>
+            <button class="page-btn" onclick="changePage(3)">3</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="icons/video-player.svg" alt="Logo" class="footer-logo logo-blue">
+                    <a href="https://vk.com" class="social-link">
+                        <img src="icons/vk.svg" alt="VK" class="vk-icon">
+                    </a>
+                </div>
+                <div class="footer__nav">
+                    <ul class="footer__list">
+                        <li><a href="index.html">Фильмы</a></li>
+                        <li><a href="top25.html">Топ-25</a></li>
+                        <li><a href="actors.html">Актёры</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <p>Kino@kino.ru</p>
+                    <p>8-888-888-88-88</p>
+                </div>
+            </div>
+            <hr class="footer__line">
+            <div class="footer__bottom">
+                <p class="policy">Политика конфиденциальности</p>
+                <p class="copyright">Киносайт © 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/top25.js"></script>
+</body>
+</html>

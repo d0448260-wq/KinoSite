@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Досье Актеров</title>
+    <meta name="description" content="Удобный интерфейс для просмотра карточек и данных актеров через API.">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="icons/video-player.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиноСайт — Твой гид в мире кино</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__left">
+                <a href="index.html" class="logo">
+                    <img src="icons/video-player.svg" alt="Logo" class="logo-img logo-blue">
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Фильмы</a></li>
+                    <li><a href="top25.html" class="nav__link">Топ-25</a></li>
+                    <li><a href="actors.html" class="nav__link">Актёры</a></li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <button class="btn-subscribe">Подписаться</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-banner">
+            <img src="img/2148191721.jpg" alt="Фон баннера" class="main-banner__img">
+            
+            <div class="container main-banner__inner">
+                <div class="main-banner__content">
+                    <h1 class="main-banner__title">КиноСайт</h1>
+                    <p class="main-banner__subtitle">Окунись в мир кино</p>
+                    <button class="btn-primary">Подписаться</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <h2 class="section-title">Наши фильмы</h2>
+            <div class="movies-grid" id="movies-container">
+                </div>
+
+            <div class="pagination" id="pagination">
+                <button class="page-btn active" data-page="1">1</button>
+                <button class="page-btn" data-page="2">2</button>
+                <button class="page-btn" data-page="3">3</button>
+                <button class="page-btn" data-page="4">4</button>
+                <button class="page-btn" data-page="5">5</button>
+            </div>
+        </div>
+    </main>
+
+    <section class="subscribe">
+        <div class="container subscribe__inner">
+            <div class="subscribe__text">
+                <h2 class="subscribe__title">Заголовок</h2>
+                <p class="subscribe__desc">Хочешь получать новости о новинках первым?</p>
+            </div>
+            <form class="subscribe__form">
+                <input type="text" placeholder="Имя" class="subscribe__input">
+                <input type="email" placeholder="Электронная почта" class="subscribe__input">
+                <button type="submit" class="subscribe__btn">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="icons/video-player.svg" alt="Logo" class="footer-logo logo-blue">
+                    <a href="https://vk.com" class="social-link">
+                        <img src="icons/vk.svg" alt="VK" class="vk-icon">
+                    </a>
+                </div>
+                <div class="footer__nav">
+                    <ul class="footer__list">
+                        <li><a href="index.html">Фильмы</a></li>
+                        <li><a href="top25.html">Топ-25</a></li>
+                        <li><a href="actors.html">Актёры</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <p>Kino@kino.ru</p>
+                    <p>8-888-888-88-88</p>
+                </div>
+            </div>
+            <hr class="footer__line">
+            <div class="footer__bottom">
+                <p class="policy">Политика конфиденциальности</p>
+                <p class="copyright">Киносайт © 2026</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

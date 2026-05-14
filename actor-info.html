@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Досье актера</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html"><img src="icons/video-player.svg" alt="Logo" class="logo-blue"></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Фильмы</a></li>
+                        <li><a href="top25.html" class="nav__link">Топ-25</a></li>
+                        <li><a href="actors.html" class="nav__link active">Актёры</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div id="actor-detail-content" class="actor-detail-flex">
+            <p class="loading">Загрузка данных об актере...</p>
+        </div>
+    </main>
+
+    <script src="js/actor-info.js"></script>
+</body>
+</html>
